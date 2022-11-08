@@ -43,7 +43,6 @@ app.all('*', (req, res) => {
 	} else {
 		res.type('txt').send('404 Not Found');
 	}
-	sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
 app.use(errorHandler);
